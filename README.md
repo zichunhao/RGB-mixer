@@ -33,3 +33,24 @@ B_path: functions/func3.py
     \tilde{P} = \frac{P - \mathtt{func\_min}}{\mathtt{func\_max} - \mathtt{func\_min}} \times 255
     $$
     They do not need to be the actual minimum and maximum values of the pixel values. 
+
+## Example
+<div style="display: flex; flex-direction: column;">
+  <div style="margin-bottom: 20px;">
+    <h3 style="text-align: center;">Input Images</h3>
+    <div style="display: flex; justify-content: center;">
+      <div style="flex: 1; padding-right: 10px;">
+        <img src="images/img0.jpg" alt="Image 1" style="width: 100%;">
+      </div>
+      <div style="flex: 1; padding-left: 10px;">
+        <img src="images/img1.jpg" alt="Image 2" style="width: 100%;">
+      </div>
+    </div>
+  </div>
+  <div>
+    <h3 style="text-align: center;">Output Image</h3>
+    <div style="text-align: center;">
+      <img src="images/output.jpg" alt="Output" style="width: 100%; max-width: 800px;">
+    </div>
+  </div>
+</div>
