@@ -5,10 +5,6 @@ This is a python script that takes an image and mixes the RGB channels pixel-wis
 ```bash
 python3 main.py --yamls <list of yaml files to process>
 ``` 
-Example:
-```bash
-python main.py --yamls example.yml
-```
 
 ## Configuration
 The RGB Mixer script uses YAML configuration files to specify the input images, output path, and mixing functions for each color channel. Here's an example YAML configuration file:
@@ -35,6 +31,11 @@ B_path: functions/func3.py
     They do not need to be the actual minimum and maximum values of the pixel values. 
 
 ## Example
+Script:
+```bash
+python main.py --yamls example.yml
+```
+
 <div style="display: flex; flex-direction: column;">
   <div style="margin-bottom: 20px;">
     <h3 style="text-align: center;">Input Images</h3>
