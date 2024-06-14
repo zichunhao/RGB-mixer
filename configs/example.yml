@@ -1,7 +1,7 @@
 inputs:
   - images/img0.jpg
   - images/img1.jpg
-output: output_image.jpg
+output: images/output.jpg
 R_path: funcs/arctanh_2.py
 G_path: funcs/arctanh_2.py
 B_path: funcs/arctanh_2.py
