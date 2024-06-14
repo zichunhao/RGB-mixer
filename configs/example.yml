@@ -5,3 +5,4 @@ output: images/output.jpg
 R_path: funcs/arctanh_2.py
 G_path: funcs/arctanh_2.py
 B_path: funcs/arctanh_2.py
+rescale_target: 0  # optional, default to 0

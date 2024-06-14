@@ -46,12 +46,12 @@ def main():
 
     for yaml_file in tqdm(yaml_files, desc="Processing YAML files"):
         try:
-            rgb_mixer, input_paths, output_path = parse_yaml(yaml_file)
+            rgb_mixer, rescale_target, input_paths, output_path = parse_yaml(yaml_file)
             input_images = [Image.open(path) for path in input_paths]
             output_path = Path(output_path)
             # make sure the output directory exists
             output_path.parent.mkdir(parents=True, exist_ok=True)
-            img = rgb_mixer.process(input_images)
+            img = rgb_mixer.process(input_images, rescale_target=rescale_target)
             img.save(output_path)
             logging.debug(f"Generated image saved to: {output_path}")
         except FileNotFoundError as e:

@@ -32,7 +32,7 @@ def parse_yaml(yaml_file: str) -> Tuple[RGBMixer, str, str]:
         "B": config["B_path"],
     }
     num_images = len(input_paths)
-
+    rescale_target = config.get("rescale_target", 0)
     # Load the R, G, B functions and min/max values from separate Python files
     functions = {}
     min_max_values = {}
@@ -58,7 +58,7 @@ def parse_yaml(yaml_file: str) -> Tuple[RGBMixer, str, str]:
         **min_max_values,
     )
 
-    return rgb_mixer, input_paths, output_path
+    return rgb_mixer, rescale_target, input_paths, output_path
 
 
 def get_proj_dir():
